@@ -347,7 +347,7 @@ body{
     transform: rotateY(180deg);
   }
 
-  .collageimg, .color{
+  .collageimg, .color, .mood{
     width: 50%;
     display: block;
     margin-left: auto;
