@@ -507,6 +507,12 @@ body{
   .ldc, .weather, .longscroll, .collage{
     padding: 5px;
   }
+  
+  /* For GADML User Research */
+  iframe {
+    margin:auto;
+    display:block;
+}
 
   @media screen and (min-width: 700px){
     header{
