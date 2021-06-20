@@ -417,7 +417,7 @@ footer .socialmenu .fa {
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: #ffc68c;
+    background-color: #800040;
     font-weight: 800;
 }
 
@@ -537,7 +537,7 @@ iframe {
         width: 75%;
     }
     .navlinks {
-        justify-content: left;
+        justify-content: center;
         flex-direction: row;
         font-size: 1em;
     }
