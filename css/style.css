@@ -10,7 +10,7 @@ body{
   header{
     background: #ffffff;
     border: #ffffff;
-    border-bottom: 6px solid #696969;
+    border-bottom: 6px solid #000000;
     animation-name: bordercolor;
     animation-duration: 10s;
     display: flex;
@@ -26,8 +26,8 @@ body{
   @keyframes bordercolor{
     0%{ border-color: #000000;}
     25%{ border-color: #800040;}
-    50%{ border-color: #004080;}
-    75%{ border-color: #800040;}
+    50%{ border-color: #ce6506;}
+    75%{ border-color: #006a00;}
     100%{ border-color: #000000;}
   }
 
