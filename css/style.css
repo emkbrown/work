@@ -1,6 +1,6 @@
 body{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     font-size: 14pt; 
@@ -30,41 +30,13 @@ body{
     75%{ border-color: #800040;}
     100%{ border-color: #000000;}
   }
-  
-  .navlinks{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    font-size: .75em;
-    padding: 0;
-  }
-
-/*   .currentpage{
-    text-decoration: underline;
-    font-size: .6em;
-    padding: 0;
-    margin-left:0;
-    margin-right: 0;
-  } */
-
-
-  /* .parallax{
-    background-image: url("../img/myface.jpg");
-    min-height: 900px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
   h1{
     font-size: 2em;
     text-align: center;
     line-height: 2;
-    padding: 10px;
-    font-family: 'Lato', sans-serif ;
+    padding: 20px;
+    font-weight: 800;
     color: #000000;
   }
   
@@ -72,13 +44,17 @@ body{
     font-size: 1.5em;
     text-align: center;
     padding: 20px 10px;
-    font-family: 'Roboto', sans-serif ;
+    font-weight: 800;
     color: #000000;
   }
 
   h3{
-    font-family: 'Roboto', sans-serif ;
+    font-weight: 800;
     color: #000000;
+  }
+
+  h4{
+    padding:20px;
   }
   
   p {
@@ -88,7 +64,6 @@ body{
     margin-right: auto;
     width: 90%;
     font-size: .90em;
-    font-family: 'Lato', sans-serif ;
   }
 
   a.skip{
@@ -101,11 +76,18 @@ body{
     transition: top 1s ease-out;
     z-index: 1;
   }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
+
+  /* NAVIGATION */
+
+  .navlinks{
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    font-size: .75em;
+    padding: 20px;
   }
 
   .about, .portfolio, .resume {
@@ -122,9 +104,12 @@ body{
   body.about li.about, body.portfolio li.portfolio {
     text-decoration: underline;
   }
+  
   #innernav{
     text-decoration: underline;
   }
+
+  /* RESPONSIVE */
   
   nav li a:hover {
     color: #800040;
@@ -138,6 +123,14 @@ body{
   *:focus{
     border: 1px solid black;
   }
+
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+  /* FOOTER */
   
   footer{
     background-color: #696969;
@@ -171,146 +164,48 @@ body{
     color: #800040;
   }
 
+  /* ABOUT */
 
-  .headshot{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    padding: 5px;
-  }
-
-  .mission, .strengths{
+ .bio{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
-
-  .mision_items, .strengths_items{
-    grid-column: 1 / span;
-  }
-
-  .mission_items h3, .strengths_items h3{
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-  }
-  
-  .gallery1, .gallery8 {
-    grid-column: 1 / span 2;
-  }
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 100px;
+ }
 
-  .gallery2, .gallery9{
-    grid-column: 3 / span 2;
-  }
+ .bio-grid-1{
+    grid-column: 2 span 1;
+    padding-left: 150px;
+ }
 
-  .gallery3, .gallery4, .gallery5, .gallery6, .gallery7{
-    grid-column: 1 / span 4;
-  }
+ .bio-grid-2{
+    grid-column: 3 span 2;
+    padding-right: 150px;
+    padding-left: 20px;
+ }
 
-  /* for contact form*/
-  form {
-    border: 3px solid #eeeeee;
-    margin: 20px;
-  }
+ .bio-grid-2 p{
+   width: 100%;
+ }
 
-  fieldset{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  legend{ 
-    font-size: 150%;
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  label{
-    display: inline-block;
-    margin-right:10px;
-    width:50%;
-  }
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  span{
-    margin-left: auto;
-    margin-right: auto;
-    font-family: italic;
-    font-weight: bold;
-  }
-  
-  textarea{
-    width: 100%;
-    height: 35vh;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-  }
-  
-  
-  input[type=checkbox]{
-      display:inline;
-      width:inherit;
-  }
-
-  input[type=submit] {
-    background-color: #c86706;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  input[type=submit]:hover {
-    opacity: 0.8;
-  }  
-
-  @media screen and (min-width: 770px) {
-    form{
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    input{
-      width:100%;
-    }
-  
-    textarea{
-      width:100%;
-      height: 25vh;
-   }
-   
-   div + label{
-      line-height: 25vh;
-      vertical-align:top;
-   }
-  }
-
-  /*for longscroll*/
+ .about h1{
+  font-size: 2em;
+  text-align: left;
+  line-height: 2;
+  padding-top: 50px;
+  font-weight: 800;
+  color: #ce6506;
+}
 
 
 
-  /*for collage*/
+  /*LONGSCROLL*/
+
+
+
+  /*COLLAGE*/
   .sketches{
     background-color: transparent;
     width: 300px;
@@ -486,16 +381,14 @@ body{
   padding: 20px;
   text-align: center;
   background-color: #ffc68c;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
 }
 .next a:hover {
   color: #800040;
   text-decoration: underline;
 }
 
-  .projects img:hover {
-    box-shadow: 0 0 2px 1px black;
-  }
+
 
   .projects{
     display: flex;
@@ -504,9 +397,21 @@ body{
     flex-wrap: wrap;
   }
 
-  .ldc, .weather, .longscroll, .collage{
-    padding: 5px;
+  .ldc, .weather, .longscroll, .collage, .intestina, .epi{
+    padding: 20px;
   }
+
+  .ldc img, .weather img, .longscroll img, .collage img, .intestina img, .epi img{
+    transition: 1s ease;
+  }
+
+  .ldc:hover, .weather:hover, .longscroll:hover, .collage:hover, .intestina:hover, .epi:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+  }
+
   
   /* For GADML User Research */
   iframe {
@@ -579,10 +484,10 @@ body{
       width: 75%;
     }
 
-    header{
+/*     header{
       flex-direction: row;
       justify-content: space-between;
-    }
+    } */
   
     .navlinks{
       justify-content: left;
