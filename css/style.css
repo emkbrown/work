@@ -47,7 +47,7 @@ h1 {
     line-height: 2;
     padding: 20px;
     font-weight: 800;
-    color: #000000;
+    color: #800040;
 }
 
 h2 {
@@ -213,6 +213,10 @@ footer .socialmenu .fa {
 
 .bio-grid-2 p {
     width: 100%;
+}
+
+.bio-grid-2 h1:hover {
+    color: #006a00;
 }
 
 .about h1 {
@@ -429,30 +433,30 @@ footer .socialmenu .fa {
     flex-wrap: wrap;
 }
 
-.ldc,
-.weather,
-.longscroll,
-.collage,
-.intestina,
-.epi {
+.ldcimg,
+.weatherimg,
+.longscrollimg,
+.collageimg2,
+.intestinaimg,
+.epiimg {
     padding: 20px;
 }
 
-.ldc img,
-.weather img,
-.longscroll img,
-.collage img,
-.intestina img,
-.epi img {
+.ldcimg img,
+.weatherimg img,
+.longscrollimg img,
+.collageimg2 img,
+.intestinaimg img,
+.epiimg img {
     transition: 1s ease;
 }
 
-.ldc:hover,
-.weather:hover,
-.longscroll:hover,
-.collage:hover,
-.intestina:hover,
-.epi:hover {
+.ldcimg:hover,
+.weatherimg:hover,
+.longscrollimg:hover,
+.collageimg2:hover,
+.intestinaimg:hover,
+.epiimg:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
