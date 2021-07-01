@@ -483,6 +483,16 @@ iframe {
     display: block;
 }
 
+
+/* for EPI */
+
+#bigimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 @media screen and (min-width: 700px) {
     header {
         flex-direction: column;
