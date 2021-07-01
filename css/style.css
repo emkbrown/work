@@ -534,7 +534,7 @@ iframe {
 
 @media screen and (min-width: 1000px) {
     p {
-        width: 50%;
+        width: 75%;
         font-size: 1em;
     }
     .bio {
