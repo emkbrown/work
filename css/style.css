@@ -240,10 +240,10 @@ footer .socialmenu .fa {
 }
 
 .mia {
-    margin-right: auto;
+    display: block;
     margin-left: auto;
-    width: 100%;
-    height: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 
