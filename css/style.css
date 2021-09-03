@@ -542,6 +542,44 @@ ul {
 }
 
 
+/*Campus Cakes */
+
+.campuscakespersonas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.cakes-logos {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.logo1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.logo2 {
+    grid-row: 2;
+    griw-column: 1;
+}
+
+.logo3 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.logo4 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
 /* For GADML User Research */
 
 iframe {
