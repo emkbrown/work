@@ -557,6 +557,8 @@ ul {
     grid-template-columns: auto auto;
     grid-gap: 10px;
     justify-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .logo1 {
