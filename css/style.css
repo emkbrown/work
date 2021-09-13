@@ -105,9 +105,9 @@ a.skip {
 
 .about,
 .portfolio,
-.resume {
+.resume,
+.gallery {
     color: #000;
-    padding: 8px 16px;
     text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ a.skip {
 }
 
 body.about li.about,
-body.portfolio li.portfolio {
+body.portfolio li.portfolio body.gallery li.gallery {
     text-decoration: underline;
 }
 
@@ -129,7 +129,7 @@ body.portfolio li.portfolio {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 99%;
+    width: 40%;
     padding-left: 20px;
     padding-right: 20px;
 }
