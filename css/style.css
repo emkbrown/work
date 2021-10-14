@@ -508,14 +508,6 @@ ul {
     width: 30%;
 }
 
-.coupons {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding: 100px;
-}
-
 .cakes-logos {
     display: grid;
     grid-template-rows: auto auto;
@@ -551,6 +543,56 @@ ul {
 .cake_link {
     color: #548399;
     text-decoration: underline;
+}
+
+.cc-process-images {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.c1 {
+    grid-column: 1 span 2;
+    grid-row: 2;
+}
+
+.c5 {
+    grid-column: 4 span 2;
+    grid-row: 2;
+}
+
+.c2 {
+    grid-column: 1 span 2;
+    grid-row: 1;
+}
+
+.c2 {
+    grid-column: 3 span 2;
+    grid-row: 1;
+}
+
+.c2 {
+    grid-column: 5 span 2;
+    grid-row: 1;
+}
+
+.cc-marketing {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+}
+
+.coupons {
+    grid-column: 1;
+    grid-row: 1;
+    width: 75%;
+}
+
+.pricing {
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%;
 }
 
 
