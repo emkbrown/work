@@ -78,6 +78,11 @@ p {
     font-size: .90em;
 }
 
+a {
+    text-decoration: underline;
+    color: #E8BA62;
+}
+
 a.skip {
     background: white;
     left: 0;
@@ -140,10 +145,14 @@ nav li a:hover {
     color: #E8BA62;
 }
 
-a,
+a {
+    text-decoration: underline;
+    color: #E8BA62;
+}
+
 a:visited {
     text-decoration: none;
-    color: black;
+    color: black
 }
 
 *:focus {
@@ -296,9 +305,13 @@ footer .socialmenu .fa {
 
 ul {
     padding: 10px;
-    padding-bottom: 100px;
-    text-align: left;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chi-ul {
+    width: 75%;
 }
 
 
@@ -452,7 +465,8 @@ ul {
 .weatherimg,
 .longscrollimg,
 .intestinaimg,
-.epiimg {
+.epiimg,
+.frontporchimg {
     padding: 20px;
 }
 
@@ -460,7 +474,8 @@ ul {
 .weatherimg img,
 .longscrollimg img,
 .intestinaimg img,
-.epiimg img {
+.epiimg img,
+.frontporchimg img {
     transition: 1s ease;
 }
 
@@ -468,7 +483,8 @@ ul {
 .weatherimg:hover,
 .longscrollimg:hover,
 .intestinaimg:hover,
-.epiimg:hover {
+.epiimg:hover,
+.frontporchimg:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
@@ -555,6 +571,61 @@ iframe {
     width: 60%;
 }
 
+
+/*Front Porch*/
+
+.chi-summary {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.chi-frame1 {
+    grid-column: 1;
+}
+
+.text-chi-summary {
+    grid-column: 2 span;
+}
+
+.chi_personas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+}
+
+.chi-p-1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.chi-p-2 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.chi-p-3 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.chi_sb_2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.chi-flow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 @media screen and (min-width: 700px) {
     header {
         flex-direction: column;
@@ -592,60 +663,77 @@ iframe {
         grid-column: 2;
         grid-row: 1;
     }
-}
-
-@media screen and (min-width: 1000px) {
-    p {
-        width: 75%;
-        font-size: 1em;
-    }
-    .bio {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto auto;
-        justify-content: space-around;
-        padding-top: 50px;
-        padding-bottom: 100px;
-    }
-    .bio-grid-1 {
-        grid-column: 1;
-        padding-left: 150px;
-    }
-    .bio-grid-2 {
-        grid-column: 2;
-        grid-row: 1;
-        padding-right: 150px;
-        padding-left: 20px;
-    }
-    .info p {
-        width: 75%;
-    }
-    .navlinks {
-        justify-content: center;
-        flex-direction: row;
-        font-size: 1em;
-    }
-    .about a,
-    .portfolio a,
-    .resume a {
-        padding: 10px;
-    }
-    .projects {
-        padding-bottom: 100px;
-    }
-    .ldc {
-        padding-left: 10px;
-    }
-    .weather {
-        padding-left: 0px;
-    }
-    .weather_sketch1 {
-        grid-row: 2;
-        grid-column: 1 / span 1;
-    }
-    .weather_sketch2 {
-        grid-row: 2;
-        grid-column: 2 / span 1;
+    @media screen and (min-width: 1000px) {
+        p {
+            width: 75%;
+            font-size: 1em;
+        }
+        .bio {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .bio-grid-1 {
+            grid-column: 1;
+            padding-left: 150px;
+        }
+        .bio-grid-2 {
+            grid-column: 2;
+            grid-row: 1;
+            padding-right: 150px;
+            padding-left: 20px;
+        }
+        .info p {
+            width: 75%;
+        }
+        .navlinks {
+            justify-content: center;
+            flex-direction: row;
+            font-size: 1em;
+        }
+        .about a,
+        .portfolio a,
+        .resume a {
+            padding: 10px;
+        }
+        .projects {
+            padding-bottom: 100px;
+        }
+        .ldc {
+            padding-left: 10px;
+        }
+        .weather {
+            padding-left: 0px;
+        }
+        .weather_sketch1 {
+            grid-row: 2;
+            grid-column: 1 / span 1;
+        }
+        .weather_sketch2 {
+            grid-row: 2;
+            grid-column: 2 / span 1;
+        }
+        .chi_personas {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            justify-content: space-around;
+        }
+        .chi-p-1 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .chi-p-2 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .chi-p-3 {
+            grid-column: 3;
+            grid-row: 1;
+        }
     }
 }
 
