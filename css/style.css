@@ -108,6 +108,10 @@ a.skip {
     padding: 20px;
 }
 
+.navlinks a {
+    text-decoration: none;
+}
+
 .about,
 .portfolio,
 .resume {
@@ -306,8 +310,6 @@ footer .socialmenu .fa {
 ul {
     padding: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .chi-ul {
@@ -611,6 +613,22 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+.oldepi {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.epi_old1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.epi_old2 {
+    grid-column: 2;
+    grid-row: 1 / 3;
 }
 
 
