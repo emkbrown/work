@@ -110,6 +110,7 @@ a.skip {
 
 .navlinks a {
     text-decoration: none;
+    padding: 10px;
 }
 
 .about,
@@ -310,10 +311,6 @@ footer .socialmenu .fa {
 ul {
     padding: 10px;
     display: block;
-}
-
-.chi-ul {
-    width: 75%;
 }
 
 
