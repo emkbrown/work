@@ -45,7 +45,7 @@ h1 {
     font-size: 2em;
     text-align: center;
     line-height: 2;
-    padding: 20px;
+    padding: 10px;
     font-weight: 800;
     color: #9F5409;
 }
@@ -633,7 +633,7 @@ iframe {
 
 .chi-summary {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     justify-content: space-around;
     padding-top: 50px;
@@ -644,7 +644,7 @@ iframe {
 }
 
 .text-chi-summary {
-    grid-column: 2 span;
+    grid-column: 2;
 }
 
 .chi_personas {
