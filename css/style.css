@@ -548,6 +548,9 @@ ul {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .c1 {
@@ -579,7 +582,9 @@ ul {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .coupons {
