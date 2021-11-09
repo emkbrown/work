@@ -673,14 +673,14 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 50%;
 }
 
 .chi-flow {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 50%;
 }
 
 @media screen and (min-width: 700px) {
