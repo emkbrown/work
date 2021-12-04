@@ -23,6 +23,16 @@ header {
     width: 100%;
 }
 
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 @keyframes bordercolor {
     0% {
         border-color: #000000;
@@ -701,6 +711,14 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.small-centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 10px;
 }
 
 @media screen and (min-width: 700px) {
